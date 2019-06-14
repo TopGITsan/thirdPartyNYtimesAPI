@@ -1,16 +1,38 @@
 body {
   font-family: sans-serif;
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 .wrapper {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  background-color: rgba(116, 115, 115, 0.1)
+}
+.controls {
+  margin: 0 auto;
 }
 
 .controls, .results {
   flex: 1;
-  padding: 10px;
+  padding: 30px;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 8px;
+  border: 0em;
+  box-shadow: 0px 0px 4px grey;
+}
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: green;
+  color: white;
 }
 
 form p:nth-of-type(1) {
@@ -18,7 +40,11 @@ form p:nth-of-type(1) {
 }
 
 h1 {
+  background-color: #F4F4F4;
+  color: grey;
   text-align: center;
+  padding: 8px;
+  box-shadow: 0px 4px 4px grey;
 }
 
 h2 {
@@ -50,8 +76,9 @@ nav {
 article {
   padding: 10px;
   margin-bottom: 20px;
-  background-color: #ddd;
+  background-color: #F4F4F4;
   border: 1px solid #ccc;
+  box-shadow: 0px 0px 4px rgb(116, 115, 115);
 }
 
 img {
